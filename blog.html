@@ -1,0 +1,119 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Home</title>
+<style>
+  ul{
+    list-style-type: none;
+    display: flex;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 40px;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid white;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+ .projects-section {
+      max-width: 900px;
+      margin: auto;
+      padding: 120px;
+    }
+
+  .projects-section h1 {
+      text-align: center;
+      color: wheat;
+      font-size: 40px;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px 0;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .project-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .project-desc {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .project-link {
+      color:navy;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body bgcolor="black">
+
+  <nav class="navbar">
+    <div class="logo">My Profile</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <h1>My Projects</h1>
+
+
+    <div class="project-card">
+      <div class="project-title"><b>Published Articles</b></div>
+      <div class="project-desc"> I recently published an article on <strong>Medium</strong> about 
+    <em><b>How to use Audio and Video effectively in multimedia ?📽️🎶</em></b>
+    You can read it here: </div>
+      <a href="https://medium.com/@siyararansiluni005/how-to-use-audio-and-video-effectively-in-multimedia-️-b3793c7faa0d" class="project-link" target="_blank">View on Medium</a>
+    </div>
+
+    
+    
+
+  </section>
+<footer>
+    &copy; 2025 Siyara.
+  </footer>
+</body>
+</html>

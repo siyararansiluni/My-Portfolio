@@ -1,0 +1,245 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio - Home</title>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color:black;
+      padding-top: 80px;}
+    
+    ul{
+      list-style-type: none;
+      display: flex;
+    }
+    a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 40px;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+   }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid white;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+  
+ .about {
+      padding: 40px 20px;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about-img img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid black;
+      transition: transform 0.3s ease; 
+    }
+   .about-img img:hover {
+        transform: scale(1.40);
+}
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    .about-text h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .moving-text {
+        white-space: nowrap;        
+        display: inline-block;
+        animation: slide 10s linear infinite;
+        font-size: 20px;
+         font-weight: bold;
+    }
+
+   @keyframes slide {
+     from {
+      transform: translateX(100%); 
+     }
+    to {
+    transform: translateX(-6%); 
+  }
+}
+
+    .about-text p {
+      font-size: 18px;
+      color:white;
+    }
+    
+
+
+    .skills {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 28px;
+      color:white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills-list li {
+      background-color:white;
+      color:black;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      list-style: none;
+      transition: transform 0.2s ease;
+    }
+
+    .skills-list li:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: #eee;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h1 {
+        font-size: 24px;
+      }
+
+      .about-text p {
+        font-size: 16px;
+      }
+    
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Profile</div>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="img.jpg" alt="My Photo">
+    </div>
+    <div class="about-text">
+      <h1 class="moving-text">Hello, I'm Siyara</h1>
+      <p>
+        <b>I am an IT undergraduate at the University of Moratuwa.</b><br>
+       I am eager to learn and take on new challenges.I blend creativity and logic using languages like HTML, CSS, JavaScript, Python, and C to build impactful solutions.
+      </p><br><br>
+      <p>
+    Connect with me on LinkedIn to see my latest projects and professional updates.
+</p>
+
+<p style="text-align:center;">
+    <a href="https://www.linkedin.com/in/siyara-r-19629b329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="font-size:30px; color:white;">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</p>
+         </div>
+  </div>
+</section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>Gimp</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Siyara.
+  </footer>
+
+</body>
+</html>
